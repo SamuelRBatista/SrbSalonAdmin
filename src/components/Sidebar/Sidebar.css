@@ -1,0 +1,85 @@
+/* Sidebar geral */
+.sidebar {
+	width: 295px;
+	height: 100vh;
+	background-color: #33211c;
+	color: #fff;
+	transition: width 0.3s ease;
+	overflow: hidden;
+	position: fixed;
+  }
+  
+  .sidebar.collapsed {
+	width: 80px;
+  }
+  
+  .sidebar .toggle-btn {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 30px;
+	cursor: pointer;
+  }
+  
+  .sidebar .menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .sidebar .menu ul li {
+	display: flex;
+	align-items: center;
+	padding: 18px 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .sidebar .menu ul li:hover {
+	background-color: #4b3228;
+  }
+  
+  .sidebar .menu ul li span {
+	color:#fff;
+	list-style: none;
+	margin-left: 13px;
+	font-size: 32px;
+  }
+
+  .menu-link {
+	text-decoration: none;
+	color: inherit;
+  }
+  .menu-link:hover {
+	text-decoration: none;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+	.sidebar {
+	  text-decoration: none;
+	  width: 81px;
+	}
+
+	.sidebar .title {
+		display: none;
+	  }
+  
+	.sidebar.collapsed {
+	  width: 70px;
+	}
+
+	.sidebar .menu ul li span {
+		color: #fff;
+		list-style: none;
+		margin-left: 10px;
+		font-size: 2.2rem;
+	}
+
+	.sidebar .toggle-btn {
+	display: none;
+	  }
+
+  }
+  
